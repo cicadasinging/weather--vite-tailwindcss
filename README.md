@@ -85,10 +85,20 @@ npx tailwindcss init -p
 > require("@rushstack/eslint-patch/modern-module-resolution");
 > 
 > module.exports = {
->      env: {
->        node: true,
->      },
+> env: { 
+>  node: true,
+> },
 > };
+> ```
+>
+> 问题：WebStorm 插件 Tailwind CSS 失效
+>
+> 解决：
+>
+> `Bash`:
+>
+> ```bash
+> npm i -D tailwindcss@3.1.8
 > ```
 
 `tailwind.config.js`:
@@ -210,10 +220,11 @@ export default defineConfig({
 > require("@rushstack/eslint-patch/modern-module-resolution");
 > 
 > module.exports = {
->      extends: [
->        ".eslintrc-auto-import.json"
->      ],
+>   extends: [
+>     ".eslintrc-auto-import.json"
+>   ],
 > };
+>
 
 ### Git
 
@@ -228,3 +239,10 @@ git remote add origin git@github.com:cicadasinging/weather--vite-tailwindcss.git
 git push -f origin main
 ```
 
+### 其他工具
+
+`Bash`:
+
+```bash
+npm i lodash-es
+```
