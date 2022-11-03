@@ -4,7 +4,7 @@ const service = axios.create({
 
 service.interceptors.response.use(
   (res) => Promise.resolve(res.data),
-  (error) => Promise.reject(error)
+  (err) => Promise.reject(err)
 );
 
 export default service;
