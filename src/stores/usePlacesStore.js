@@ -7,9 +7,9 @@ export default defineStore("places", {
     places: getPlacesLocalStorage(),
   }),
   actions: {
-    setPlaces(places) {
-      this.places = places;
-      setPlacesLocalStorage(places);
+    setPlaces(v) {
+      this.places = v;
+      setPlacesLocalStorage(v);
     },
   },
 });

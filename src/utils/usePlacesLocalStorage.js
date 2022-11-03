@@ -4,8 +4,8 @@ export function getPlacesLocalStorage() {
   return localStorage.getItem(_localKey) ? JSON.parse(localStorage.getItem(_localKey)) : [];
 }
 
-export function setPlacesLocalStorage(value) {
-  localStorage.setItem(_localKey, JSON.stringify(value ? value : []));
+export function setPlacesLocalStorage(v) {
+  localStorage.setItem(_localKey, JSON.stringify(v ? v : []));
 }
 
 export function removePlacesLocalStorage() {
