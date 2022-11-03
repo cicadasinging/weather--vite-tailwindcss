@@ -14,7 +14,6 @@
 </template>
 
 <script setup>
-import usePlaces from "@/composables/usePlaces";
 import usePlacesStore from "@/stores/usePlacesStore";
 
 const placesStore = usePlacesStore();
