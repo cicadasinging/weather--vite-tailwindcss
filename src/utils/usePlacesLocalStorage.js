@@ -1,7 +1,7 @@
 const _localKey = "placesLocalStorage";
 
 export function getPlacesLocalStorage() {
-  return localStorage.getItem(_localKey) ? JSON.parse(localStorage.getItem(_localKey)) : [];
+  return JSON.parse(localStorage.getItem(_localKey) ? localStorage.getItem(_localKey) : "[]");
 }
 
 export function setPlacesLocalStorage(v) {
