@@ -1,5 +1,3 @@
-import { getPlacesLocalStorage, setPlacesLocalStorage } from "@/utils/usePlacesLocalStorage";
-
 export default defineStore("places", {
   state: () => ({
     place: {},

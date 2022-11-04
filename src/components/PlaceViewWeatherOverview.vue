@@ -24,8 +24,6 @@
 </template>
 
 <script setup>
-import usePlacesStore from "@/stores/usePlacesStore";
-
 defineProps({ weatherData: Object });
 defineEmits(["add-place", "remove-place"]);
 const placesStore = usePlacesStore();

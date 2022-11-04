@@ -12,9 +12,6 @@
 </template>
 
 <script setup>
-import getWeatherData from "@/apis/getWeatherData";
-import usePlacesStore from "@/stores/usePlacesStore";
-
 const placesStore = usePlacesStore();
 const { lon, lat } = placesStore.place;
 const weatherData = await getWeatherData(lon, lat);

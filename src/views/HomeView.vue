@@ -36,8 +36,6 @@
 </template>
 
 <script setup>
-import getPlaceData from "@/apis/getPlaceData";
-
 const searchModel = ref("");
 const searchSuccess = ref(false);
 const searchResults = ref([]);
